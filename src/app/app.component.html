@@ -1,0 +1,6 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <hello [parentForm]="form"></hello>
+  <button type="submit">Purchase</button>
+</form>
+
+{{ form.value | json }}
